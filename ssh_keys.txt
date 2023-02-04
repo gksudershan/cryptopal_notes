@@ -1,0 +1,17 @@
+Problem: Setting up SSH key to connect to github
+
+Solution: Generate a public/private SSH key pair using ssh-keygen
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This will generate a public/private key pair
+
+Add the private key to ssh-agent
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$ ssh-add ~/.ssh/id_ed25519
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Finally add the contents of the public key(i.e. ~/.ssh/id_ed25519.pub) to your github account.
