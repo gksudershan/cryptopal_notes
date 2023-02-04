@@ -1,0 +1,9 @@
+What is encoding?
+
+converting information into another form(secret or shortened)
+
+Why do we need to do this?
+
+At times it's preferrable to store or transport data in another form
+
+What is
